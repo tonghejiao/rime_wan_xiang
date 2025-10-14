@@ -4,7 +4,7 @@
 
 用户目录:
  - macos: /Users/~/Library/Rime/
- - windows: C:\Users\%userprofile%\AppData\Roaming\Rime
+ - windows: C:\Users\\%userprofile%\AppData\Roaming\Rime
 
 ai语法模型的文件需要自行下载(因为文件太大,github不让在仓库放).下载完了把文件也放到rime的用户目录,再重新部署一下rime.
 
