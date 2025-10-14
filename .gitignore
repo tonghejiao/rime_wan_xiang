@@ -1,0 +1,11 @@
+**/.DS_Store
+Wanxiang LTS zh-hans.gram
+/lua/tips.userdb
+/lua/sequence.userdb
+/wanxiang.userdb
+lua/input_stats.lua
+/build
+user.yaml
+/sync
+installation.yaml
+/zc.userdb
