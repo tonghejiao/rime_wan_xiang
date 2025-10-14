@@ -1,5 +1,7 @@
 由于rime+万象输入 初次安装有点门槛,这里整了一个初始化好的版本.只要把本仓库下载下来放到rime的用户目录就行.
 
+方便的话支持一下万象的原作者: https://github.com/amzxyz/rime_wanxiang
+
 用户目录:
  - macos: /Users/~/Library/Rime/
  - windows: C:\Users\%userprofile%\AppData\Roaming\Rime
