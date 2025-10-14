@@ -1,0 +1,6 @@
+patch:
+  ascii_composer:
+    good_old_caps_lock: false  # true | false
+    switch_key:
+      Shift_L: noop  # commit_code | commit_text | inline_ascii | clear | noop
+      Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
