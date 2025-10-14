@@ -5,18 +5,18 @@ config_version: "LTS"
 
 # [app_options]
 # 针对特定应用的设置
-# app_options:
-  # cmd.exe:
-  #     ascii_mode: true
-  #     ascii_punct: true
-  # idea64.exe:
-  #     ascii_mode: false
-  #     ascii_punct: true
-  # Code.exe:
-  #     ascii_mode: false
-  #     ascii_punct: true
-  # firefox.exe:
-  #   inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
+app_options:
+  cmd.exe:
+      ascii_mode: true
+      ascii_punct: true
+  idea64.exe:
+      ascii_mode: false
+      ascii_punct: true
+  Code.exe:
+      ascii_mode: false
+      ascii_punct: true
+  firefox.exe:
+    inline_preedit: true # 行内显示预编辑区：规避 <https://github.com/rime/weasel/issues/946>
   # cmd.exe:               
   #   ascii_mode: true     # 英文模式
   # conhost.exe:
