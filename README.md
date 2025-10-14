@@ -2,6 +2,7 @@
 
 用户目录:
  - macos: /Users/~/Library/Rime/
+ - windows: C:\Users\%userprofile%\AppData\Roaming\Rime
 
 ai语法模型的文件需要自行下载(因为文件太大,github不让在仓库放).下载完了把文件也放到rime的用户目录,再重新部署一下rime.
 
@@ -18,4 +19,6 @@ ai语法模型下载地址自行在万象仓库的releases里找一下: https://
 - 按shift无反应
 - 去掉切换中英文时的提示框
 
-已测试可用的环境: macos
+已测试可用的环境: 
+- macos15.2
+- windows11
