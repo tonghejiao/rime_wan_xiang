@@ -270,7 +270,7 @@ translator:
   enable_completion: true  # 启用候选词补全
 #  user_dict: zrm.userdb  # 用户词典的文件名称
 #  db_class: tabledb  #开启后就不会产生zrm.userdb这样的文件夹，会直接输出文本zrm.txt同时无法使用同步能力
-  enable_user_dict: false # 是否开启自动调频
+  enable_user_dict: true # 是否开启自动调频
   contextual_suggestions: false  #模型用来开启词组权重预测，效果一般关闭
   max_homophones: 5
   max_homographs: 5
@@ -352,7 +352,7 @@ wanxiang_reverse:
   tag: wanxiang_reverse
   dictionary: wanxiang_reverse
   db_class: stabledb
-  enable_user_dict: false
+  enable_user_dict: true
   enable_sentence: false
   prefix: "`"  # 反查前缀（反查时前缀会消失），与 recognizer/patterns/wanxiang_reverse 匹配
   tips: "〔反查：拆分|笔画〕"
