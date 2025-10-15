@@ -8,7 +8,9 @@
 
 ai语法模型的文件需要自行下载(因为文件太大,github不让在仓库放).下载完了把文件也放到rime的用户目录,再重新部署一下rime.
 
-ai语法模型下载地址自行在万象仓库的releases里找一下: https://github.com/amzxyz/rime_wanxiang/releases
+ai语法模型下载地址:
+- github: https://github.com/amzxyz/RIME-LMDG/releases/download/LTS/wanxiang-lts-zh-hans.gram
+- gitee: https://gitee.com/tong_he_jiao/rime_wan_xiang/releases/tag/LTS
 
 
 初始化的点:
