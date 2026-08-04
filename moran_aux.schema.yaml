@@ -1,0 +1,424 @@
+schema:
+  schema_id: moran_aux
+  name: 輔篩·魔然
+  version: "20260605"
+  author:
+    - 自然碼發明人：周志農
+    - 方案製作：ksqsf
+  description: |
+    在輸入完畢完整一句的雙拼碼後，可以輸入輔助碼篩選候選項。
+  dependencies:
+    - tiger
+    - moran_charset
+    - moran_english
+    - moran_fixed
+    #- moran_japanese
+
+switches:
+  - name: ascii_mode
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+  - name: emoji
+    states: [ 🈚, 🈶 ]
+  - options: [ std_s, std_s2t, std_s2tw, std_s2hk, std_s2jp, std_s2dzing ]
+    states: [ 简, 繁, 台, 港, 日, 寍 ]
+    # 關於該項, 參見 moran.schema.yaml 中說明
+  - name: extended_charset
+    states: [ 通用, 增廣 ]
+  - name: chaifen
+    states: [ 不拆, 扌斥 ]
+  - name: pinyinhint
+    states: [ 🔇, 🔊 ]
+  - name: unicode_comment
+    states: [ U關, U開 ]
+
+engine:
+  processors:
+    - key_binder
+    - lua_processor@*moran_pin*pin_processor
+    - ascii_composer
+    - recognizer
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - matcher@recognizer_secondary
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator@reverse_tick
+    - reverse_lookup_translator@reverse_universal
+    - reverse_lookup_translator@reverse_tiger
+    - reverse_lookup_translator@reverse_stroke
+    - reverse_lookup_translator@reverse_cangjie5
+    - reverse_lookup_translator@reverse_zrlf
+    - table_translator@custom_phrase        # 自定義短語
+    #- table_translator@english             # 英語混輸
+    #- table_translator@japanese            # 日語混輸
+    - lua_translator@*moran_aux_translator
+    - lua_translator@*moran_shijian        # 日期orq 節氣ojq 星期oxq 時間osj
+    - lua_translator@*moran_number         # 數字轉大寫, 大寫S引導, 如 S123
+    - lua_translator@*moran_unicode        # Unicode輸入, 大寫U引導, 如 U9b54
+    - lua_translator@*moran_pin*panacea_translator
+  filters:
+    - lua_filter@*moran_hint_filter@auxfilter
+    - lua_filter@*moran_charset_filter
+    - lua_filter@*moran_fix_filter
+    - lua_filter@*moran_pin*pin_filter
+    - lua_filter@*moran_reorder_filter
+    - simplifier@emoji
+    - simplifier@std_s2t
+    - simplifier@std_s2tw
+    - simplifier@std_s2hk
+    - simplifier@std_s2jp
+    - simplifier@std_s2dzing
+    - simplifier@chaifen
+    - simplifier@pinyinhint
+    - lua_filter@*moran_charset_comment_filter  # Unicode 區位提示
+    - lua_filter@*moran_unicode_display_filter  # Unicode 編碼提示
+    - lua_filter@*moran_english_filter
+    - uniquifier
+
+speller:
+  alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ/
+  delimiter: " '"
+  aux_algebra:
+    __append:
+      - derive/^(.*);(\w)(\w)$/$1/
+  algebra:
+    __patch:
+      - moran:/algebra/user_force_top?
+      - moran:/algebra/user_sentence_top?
+      - :/speller/aux_algebra
+      - moran:/algebra/user_sentence_bottom?
+      - moran:/algebra/user_force_bottom?
+
+translator:
+  dictionary: moran.extended
+  prism: moran_aux
+  initial_quality: 5
+  preedit_format:
+    - xform/([a-z][a-z][a-z][a-z])o/$1°/
+  core_word_length: 4
+  max_word_length: 10
+
+custom_phrase: # 自定義短語
+  dictionary: ""
+  user_dict: moran_custom_phrases
+  db_class: stabledb
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 10
+
+# 固頂和掛接設置
+fixed:
+  dictionary: moran_fixed_simp
+  initial_quality: 10
+  enable_completion: false
+  enable_sentence: false
+  enable_user_dict: false
+  enable_encoder: false
+  encode_commit_history: true
+
+english:
+  tag: english  # librime<=1.11 請在 custom 中置空
+  dictionary: moran_english
+  enable_user_dict: true
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: 0
+  comment_format:
+    - xform/~[A-Za-z]*//
+
+japanese:
+  dictionary: moran_japanese
+  enable_completion: false
+  enable_sentence: true
+  initial_quality: 0
+
+emoji:
+  opencc_config: moran_emoji.json
+  option_name: emoji
+  tips: all
+
+chaifen:
+  option_name: chaifen
+  opencc_config: moran_chaifen.json
+  tips: char
+  show_in_comment: true
+  inherit_comment: true
+  comment_format:
+    - "xform/-/ /"
+    - "xform/〕〔/｜/"
+
+pinyinhint:
+  option_name: pinyinhint
+  opencc_config: moran_pinyinhint.json
+  tips: char
+  show_in_comment: true
+  comment_format:
+    __include: :/chaifen/comment_format
+
+std_s2t:
+  option_name: std_s2t
+  opencc_config: s2t.json
+
+std_s2hk:
+  opencc_config: s2hk.json
+  option_name: std_hk
+
+std_s2tw:
+  opencc_config: s2tw.json
+  option_name: std_sw
+
+std_s2jp:
+  opencc_config: s2jp.json
+  option_name: std_s2jp
+  tips: all
+  tags: [abc, number]
+
+std_s2dzing:
+  opencc_config: moran_s2dzing.json
+  option_name: std_s2dzing
+  tips: all
+
+reverse_format:
+  comment_format:
+    - xform/(\w\w);(\w\w)/$1[$2]/
+  preedit_format:
+    - xform/^o(lf|bh|cj|vy|hm)//
+
+reverse_tiger:
+  tag: reverse_tiger
+  dictionary: tiger
+  enable_completion: true
+  prefix: "ohm"
+  tips: 〔虎碼〕
+  __include: reverse_format
+
+reverse_universal:
+  tag: reverse_universal
+  dictionary: moran.chars
+  tips: 〔通配〕
+  __include: reverse_format
+
+reverse_stroke:
+  tag: reverse_stroke
+  dictionary: stroke
+  prefix: "obh"
+  enable_completion: true
+  tips: 〔橫h豎s撇p捺n折z〕
+  __include: reverse_format
+
+reverse_cangjie5:
+  tag: reverse_cangjie5
+  dictionary: cangjie5
+  prefix: "ocj"
+  enable_completion: true
+  tips: 〔倉頡五代〕
+  __include: reverse_format
+
+reverse_zrlf:
+  tag: reverse_zrlf
+  dictionary: zrlf
+  prefix: "olf"
+  enable_completion: true
+  tips: 〔兩分〕
+  __include: reverse_format
+
+reverse_tick:
+  __include: reverse_zrlf
+  tag: reverse_tick
+  prefix: "`"
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+  custom_bindings:
+    __append:
+      # 在這裏添加只在本方案中生效的按鍵綁定
+  bindings:
+    __patch:
+      - :/key_binder/custom_bindings?
+      - moran:/key_bindings/moran_switches
+      - moran:/key_bindings/moran_tab
+      - moran:/key_bindings/moran_semicolon_for_2
+      - moran:/key_bindings/moran_ctrl_s
+      - moran:/key_bindings/moran_keypad
+
+recognizer:
+  import_preset: default
+  patterns:
+    unicode: "^U[a-fA-F0-9]+"
+    number: "^S[0-9]+"
+    shijian: "^N[0-9]+"
+    uppercase: "[A-Z][-_+.'A-Za-z]*$"
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    # 反查
+    reverse_universal: "(^(`[a-z`]+))|(^([a-z]{2}(`[a-z`]?|[a-z`]`))|^([a-z]{4}`))"
+    reverse_tick: "(^`$)|(^`[a-zA-Z]+$)"
+    reverse_tiger: "^ohm[a-z]+$"
+    reverse_stroke: "^obh[a-z]*$"
+    reverse_cangjie5: "^ocj[a-z]*$"
+    reverse_zrlf: "^olf[a-z]*$"
+
+recognizer_secondary:
+  patterns:
+    # {4} 表示輸入長度達到 4 後開始輸出英語
+    english: '^[A-Za-z]{4}[A-Za-z]*'
+
+moran:
+  # 預取個數
+  # 設置爲小於等於 0 的數相當於無限制。
+  # 設置爲正數時：數字越小，速度越快，被輔到的字越少；
+  #               數字越大，速度越慢，能被輔到字就越多。
+  # 一般的文本錄入需求可設爲 100~200。
+  # 如果在某些性能較低的設備上使用時感到卡頓，可以設置爲 50 或更小的數字。
+  # 如果感到被輔生僻字過多，也可以考慮設置爲較小的數字。
+  # 設爲較小正數且確需輸入生僻字的情況，可用反查功能。
+  prefetch: 150
+
+  # 固定簡碼。
+  quick_code_indicator: "⚡"
+  fix:
+    # 使用掛接碼表中的字詞？
+    # 若使用，則下面指定的 fix 設置失效。
+    use_dict: false
+    # 最大輸入幾碼時可以插入
+    # 若設爲 3，則輸入 4 碼以上時不會插入任何碼表候選
+    # 若設爲 4，則相當於掛接用法
+    use_dict_max_length: 3
+
+    # 若不使用掛接碼表，可手動指定一、二級簡碼。
+    # 若需固頂大量候選，請使用 use_dict: true。
+    # **僅在 moran/fix/use_dict: false 時生效**
+    d: 的
+    l: 了
+    j: 就
+    hk: 好
+
+  # 首選固定爲句子，使得在輸入長句時，首選的長度不會跳變
+  # 例如，輸入「不太理解」輸入到 "bu tl l" 時，
+  # 若爲 false，則首選可能是「郶」（l 輔助碼生效）
+  # 若爲 true，則首選是「不太冷」（bu tl l 被視作雙拼），次選可能是「郶」（l 輔助碼生效）
+  sentence_priority: true
+  # 句子優先的生效長度
+  # 只有在句子輸出大於該長度時，句子才會被前置。
+  # 例如，要輸入「哪個」時輸入 nagek，首先被嘗試理解爲 na'ge'k，輸出三個字。
+  # 若設爲 4，就可以保證 nagek 的首选出現「哪個」，而不是三個字的候選。
+  # 若設爲 0，則表示不加限制、永遠開啓。
+  sentence_priority_length: 0
+
+  # 四碼時是否優先單字
+  # ※ 該設置優先級高於 word_over_char_tolerance
+  #    若本選項爲 true，即使 word_over_char_tolerance 大於 0，四碼仍然是單字優先。
+  char_priority: false
+
+  # 允許多少詞出現在被輔候選之前，影響輸入長度爲偶數的情況
+  # 被輔單字太多的情況下，例如 ji'dj li'hl 等，允許一些詞出現在這些字之前。
+  # 若設爲 0，相當於被輔候選永遠在最前，輸入 xibk 時首選會是「兮」而不是細胞。
+  # 若設爲 1，相當於被輔候選會出現在次選。
+  # 必須是正整數。
+  #
+  # ※ 該設置優先級低於 single_char_input_len。
+  #    如果本設置大於 0，而 single_char_input_len=4 ，則
+  word_over_char_tolerance: 2
+  # 是否允許被輔候選和插入詞語之間調頻
+  # 僅在當 word_over_char_tolerance > 0 時有效
+  # 如 doxx 存在「多謝」和「多」兩個候選，具體順序依據用戶使用頻率而定。
+  # 若設置爲 true，「多謝」可能出現在「多」之前，也可能出現在「多」之後。
+  # 若設置爲 false，則詞語無條件出現在被輔候選之前。
+  word_over_char_adaptive: true
+
+  # 輸入輔助碼時，原來匹配的首選後移
+  # ※ 該選項也對詞語生效。
+  #
+  # 例如，假設輸入 he 的首選是「喝」，
+  # 如果進一步輸入 k，有很大可能意味着我們想找一個不是「喝」的字。
+  # 那麼「喝」應該被延遲到若干選項之後。
+  #
+  # 注意，該功能不影響僅輸入一碼或二碼時的行爲，
+  # 即若 h 的首選是「喝」，則輸入 he 的首選依然是「喝」。
+  # 若需要改變此行爲，可以參照上方的一二級簡碼設置。
+  #
+  # 若爲 true，則原來匹配的候選被延遲到若干選項之後。
+  # （延遲候選的個數由 aux_priority_defer 指定。）
+  # 若爲 false，則 hek 一定仍然是「喝」。
+  aux_priority: true
+  # 延遲多少位
+  aux_priority_defer: 2
+  # 設定 aux_priority 作用時的輔助碼長度
+  # 若爲 1，表示允許 he -> hek 時降權「喝」字，即從二碼輸入一碼到三碼時。
+  # 若爲 2，表示允許 hek -> hekh 時降權「喝」字，即從三碼輸入一碼到四碼時。
+  # 其他任何數字都是無效輸入。
+  aux_priority_length: 1
+  # 如果候選被後移，增加一個提示符。
+  aux_priority_indicator: "▾"
+
+  # 輔助碼作用位置
+  # 注：輔篩模式無論如何都是在 *首個詞語* 上進行篩選。
+  # 本配置只影響取用哪個輔助碼
+  # first：首字
+  # last：末字
+  # any：任意字
+  aux_position: any
+
+  # 輔助碼提示
+  # 格式爲：<匹配的輔助碼> ¦ <詞典中的輔助碼>
+  # 該功能不顯示拆分，建議使用 Ctrl+i 顯示單字拆分
+  enable_aux_hint: false
+
+  # 「置頂」功能相關設置
+  # 輸入時通過快捷鍵 Ctrl+t 可以將高亮顯示的候選置頂，被置頂的候選位置固定，不再參與調頻
+  # 對同一輸入碼最高支持8個置頂詞，當嘗試置頂第9個詞時，最早被置頂的詞將會失效
+  pin:
+    # 「置頂」功能開關
+    enable: true
+    # 置頂詞提示符
+    indicator: "📌"
+    # 「萬靈藥」加詞功能
+    # 通過輸入 「編碼A」//「編碼B」 實現造詞功能，編碼A是這個新詞的新編碼 編碼B是目前可以打出該詞的編碼
+    # 例如 輸入 tnfb 不能得到「頭腦風暴」這一候選， 此時我們可以輸入 tnfb//tbnkfgbk 按下空格 讓「頭腦風暴」候選上屏，上屏的詞會被加入用戶詞庫中，之後我們可以用 tnfb 來得到「頭腦風暴」這一候選了
+    # 造出的詞與置頂詞是等同的
+    panacea:
+      # 加詞狀態提示
+      prompt: "〔加詞〕"
+      # 加詞中綴引導符
+      infix: "//"
+      # 自由加詞模式開關，開啓此模式後，輸入「編碼A」//並空格上屏後會進入加詞狀態，此時可以連續地、不受束縛地輸入，再次按下x//空格退出加詞狀態，期間輸入的內容將會被記錄爲「編碼A」的新置頂詞
+      # 此模式適合造一些混合詞，如「A4紙」、「KOS-MOS」等
+      freestyle: false
+
+  # 「通用」字符集設置
+  # 不影響「增廣」：增廣仍顯示*所有*字符
+  #
+  # both: 允許繁體和簡體同時顯示
+  # simp: 只顯示簡化字
+  # trad: 只顯示繁體字
+  charset: both
+
+  # 重複略碼功能
+  # 一些輸入中存在字詞重複，如「好不好」「看了看」「想一想」。
+  # 略碼提供了替代的輸入方法，在輸入完一些字後，按對應 Shift+<對應鍵> 調用響應功能。
+  # 默認提供的略碼有：
+  # B: 輸入 hkB 直接上屏「好不好」。
+  # L: 輸入 kjL 直接上屏「看了看」。
+  # Y: 輸入 xdY 直接上屏「想一想」。
+  # V: 輸入 uoV 直接上屏「說着說着」。
+  # Q: 輸入 pkQ 直接上屏「跑來跑去」。
+  # （如需要自定義/增加/刪除略碼，請編輯 moran_processor.lua 中的 shorthands 定義。）
+  shorthands: false
+
+# 默認啓用語言模型
+__include: moran:/octagram/enable_for_sentence
