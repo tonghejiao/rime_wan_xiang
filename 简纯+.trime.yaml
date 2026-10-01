@@ -1981,7 +1981,7 @@ preset_keyboards:
         {
           click: BS,
           key_back_color: off_key_back_color,
-          swipe_up: Escape,
+          swipe_up:  Escape,
           swipe_down: ClearBefore,
           width: 15,
         },
@@ -11673,7 +11673,7 @@ preset_keys:
     label: "分享"
     option: "%s"
   Shift_L:
-    label: Shift
+    label: "Shift"
     long_click: Shift_L1
     send: Shift_L
   Shift_L1:
@@ -12327,8 +12327,8 @@ preset_keys:
     label: "/"
     text: "/"
   zaoci:
-    label: "造词"
-    text: "{`}{`}"
+    label: "切分"
+    text: "{Control+l}"
   zkhy:
     label: "]"
     text: "]"
