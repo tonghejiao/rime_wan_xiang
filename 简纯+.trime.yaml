@@ -1773,7 +1773,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "!",
           hint: "1",
-          swipe_up: "1",
+          swipe_down: "1",
           width: 10,
         },
         {
@@ -1782,7 +1782,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "@",
           hint: "2",
-          swipe_up: "2",
+          swipe_down: "2",
           width: 10,
         },
         {
@@ -1791,7 +1791,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "#",
           hint: "3",
-          swipe_up: "3",
+          swipe_down: "3",
           width: 10,
         },
         {
@@ -1800,7 +1800,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "$",
           hint: "4",
-          swipe_up: "4",
+          swipe_down: "4",
           width: 10,
         },
         {
@@ -1809,7 +1809,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "%",
           hint: "5",
-          swipe_up: "5",
+          swipe_down: "5",
           width: 10,
         },
         {
@@ -1818,7 +1818,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "^",
           hint: "6",
-          swipe_up: "6",
+          swipe_down: "6",
           width: 10,
         },
         {
@@ -1827,7 +1827,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "&",
           hint: "7",
-          swipe_up: "7",
+          swipe_down: "7",
           width: 10,
         },
         {
@@ -1836,7 +1836,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: "*",
           hint: "8",
-          swipe_up: "8",
+          swipe_down: "8",
           width: 10,
         },
         {
@@ -1845,7 +1845,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: '"',
           hint: "9",
-          swipe_up: "9",
+          swipe_down: "9",
           width: 10,
         },
         {
@@ -1854,7 +1854,7 @@ preset_keyboards:
           key_back_color: main_back_color,
           long_click: danyinhao,
           hint: "0",
-          swipe_up: "0",
+          swipe_down: "0",
           width: 10,
         },
         { width: 5 },
@@ -11372,7 +11372,7 @@ preset_keys:
     label: "亮度+"
     send: BRIGHTNESS_UP
   BS:
-    label: "⌫"
+    label: "ic@keyboard_backspace"
     repeatable: true
     send: BackSpace
   Back:
@@ -11595,7 +11595,7 @@ preset_keys:
     select: .next
     send: Eisu_toggle
   Keyboard_symbols:
-    label: "符"
+    label: "🙂"
     select: symbols
     send: Eisu_toggle
   Left:
@@ -11635,7 +11635,7 @@ preset_keys:
     states: ["。，", "．，"]
     toggle: ascii_punct
   Return:
-    label: Enter
+    label: "ic@keyboard_return"
     send: Return
   Return1:
     label: "回车"
@@ -11673,7 +11673,7 @@ preset_keys:
     label: "分享"
     option: "%s"
   Shift_L:
-    label: "Shift"
+    label: "ic@apple_keyboard_shift"
     long_click: Shift_L1
     send: Shift_L
   Shift_L1:
@@ -11685,7 +11685,7 @@ preset_keys:
     label: "同步"
     option: com.osfans.trime.sync
   Tab:
-    label: Tab
+    label: "ic@keyboard_tab"
     send: Tab
   Theme_settings:
     label: "ic@palette-outline"
@@ -12213,7 +12213,7 @@ preset_keys:
   liquid_keyboard_emoji:
     command: liquid_keyboard
     label: "🙂"
-    option: emoji
+    option: "中文"
     send: function
   liquid_keyboard_exit:
     command: liquid_keyboard
