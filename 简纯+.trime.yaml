@@ -1869,7 +1869,7 @@ preset_keyboards:
           click: s,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "、",
+          long_click: "+",
           width: 10,
         },
         {
@@ -2004,11 +2004,11 @@ preset_keyboards:
           width: 11,
         },
         {
-          click: douhao,
+          click: ",",
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          label: " ，",
-          long_click: "。",
+          label: ",",
+          long_click: ".",
           width: 10,
         },
         {
