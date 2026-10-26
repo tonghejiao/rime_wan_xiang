@@ -11372,7 +11372,7 @@ preset_keys:
     label: "亮度+"
     send: BRIGHTNESS_UP
   BS:
-    label: "ic@keyboard_backspace"
+    label: "ic@backspace_outline" 
     repeatable: true
     send: BackSpace
   Back:
@@ -11595,7 +11595,7 @@ preset_keys:
     select: .next
     send: Eisu_toggle
   Keyboard_symbols:
-    label: "🙂"
+    label: "ic@emoticon_outline"
     select: symbols
     send: Eisu_toggle
   Left:
