@@ -35,6 +35,7 @@ android_keys:
     swipe_left: "左滑"
     swipe_right: "右滑"
     swipe_up: "上滑"
+name: "简纯+"
 author: amzxyz
 conf:
   bottom:
@@ -50,16 +51,6 @@ conf:
     height: 72
   num_line:
     height: 30
-    hilited_key_back_color: hilited_main_back_color
-    key_back_color: off_key_back_color
-    width: 10
-  num_line14:
-    height: 52
-    hilited_key_back_color: hilited_key_back_color
-    key_back_color: off_key_back_color
-    width: 10
-  num_line18:
-    height: 36
     hilited_key_back_color: hilited_main_back_color
     key_back_color: off_key_back_color
     width: 10
@@ -164,6 +155,7 @@ liquid_keyboard:
         "“",
         "”",
         "‘",
+        "’",
         "·",
         "……",
         { click: "-" },
@@ -258,7 +250,6 @@ liquid_keyboard:
     name: "单位"
     type: SINGLE
   vertical_gap: 1
-name: "简纯+"
 preedit:
   foreground:
     font_size: 16
@@ -279,7 +270,7 @@ colors:
 preset_color_schemes:
   default:
     author: amzxyz
-    back_color: 0xD7D9DD
+    back_color: 0xEDEDED
     comment_text_color: 0x808080
     enter_back_color: *color9
     enter_sym_back_color: 0x2090FF
@@ -302,1460 +293,6 @@ preset_color_schemes:
     space_back_color: *color2
     text_color: 0x047BD8
 preset_keyboards:
-  14jian:
-    ascii_mode: 0
-    author: amzxyz
-    height: 80
-    horizontal_gap: 4
-    key_hint_offset_x: 0
-    key_hint_offset_y: "-2"
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    key_symbol_offset_x: 15
-    keys:
-      [
-        {
-          click: num1,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num2,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num3,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num4,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num5,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num6,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num7,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num8,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num9,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num0,
-          height: 52,
-          hilited_key_back_color: hilited_key_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: 14keyqw,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "\\",
-          key_back_color: space_back_color,
-          long_click: "!",
-          swipe_down: "\\",
-          width: 20,
-        },
-        {
-          click: 14keyer,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "{",
-          key_back_color: space_back_color,
-          long_click: "@",
-          swipe_down: "{",
-          width: 20,
-        },
-        {
-          click: 14keyty,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "}",
-          key_back_color: space_back_color,
-          long_click: "#",
-          swipe_down: "}",
-          width: 20,
-        },
-        {
-          click: 14keyui,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "[",
-          key_back_color: space_back_color,
-          long_click: "$",
-          swipe_down: "[",
-          width: 20,
-        },
-        {
-          click: 14keyop,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "]",
-          key_back_color: space_back_color,
-          long_click: "%",
-          swipe_down: "]",
-          width: 20,
-        },
-        {
-          click: 14keyas,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "(",
-          key_back_color: space_back_color,
-          long_click: select_all,
-          swipe_down: "(",
-          width: 20,
-        },
-        {
-          click: 14keydf,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: ")",
-          key_back_color: space_back_color,
-          long_click: "&",
-          swipe_down: ")",
-          width: 20,
-        },
-        {
-          click: 14keygh,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "<",
-          key_back_color: space_back_color,
-          long_click: "*",
-          swipe_down: "<",
-          width: 20,
-        },
-        {
-          click: 14keyjk,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: ">",
-          key_back_color: space_back_color,
-          long_click: '"',
-          swipe_down: ">",
-          width: 20,
-        },
-        {
-          click: 14keyl,
-          hilited_key_back_color: hilited_space_back_color,
-          hint: "/",
-          key_back_color: space_back_color,
-          long_click: danyinhao,
-          swipe_down: "/",
-          width: 20,
-        },
-        {
-          click: liquid_keyboard_clipboard,
-          composing: split_word,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 16,
-        },
-        {
-          click: 14keyzx,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          long_click: copy,
-          width: 17,
-        },
-        {
-          click: 14keycv,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          long_click: paste,
-          width: 17,
-        },
-        {
-          click: 14keybn,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          long_click: ":",
-          width: 17,
-        },
-        {
-          click: 14keym,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          long_click: fenhao,
-          width: 17,
-        },
-        {
-          click: BS,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          swipe_up: Escape,
-          width: 16,
-        },
-        {
-          click: 14Keyboard_symbols,
-          composing: Tab,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 12,
-        },
-        {
-          click: 14Keyboard_number,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 12,
-        },
-        {
-          click: "，",
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          key_symbol_offset_x: 4,
-          label: "，",
-          long_click: "、",
-          width: 11,
-        },
-        {
-          click: space,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          key_symbol_offset_x: 0,
-          swipe_down: liquid_keyboard_clipboard,
-          swipe_up: Clear,
-          width: 26,
-        },
-        {
-          click: "。",
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          key_symbol_offset_x: 4,
-          label: "。",
-          long_click: "？",
-          width: 11,
-        },
-        {
-          click: Keyboard_letter_14jian,
-          composing: xiegang,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 12,
-        },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_back_color,
-          hilited_key_symbol_color: enter_symbol_color,
-          hilited_key_text_color: enter_text_color,
-          key_back_color: enter_back_color,
-          key_symbol_color: enter_symbol_color,
-          key_symbol_offset_x: 0,
-          key_text_color: enter_text_color,
-          width: 16,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    label_transform: uppercase
-    lock: true
-    name: "14键"
-    round_corner: 10
-    vertical_gap: 3
-    width: 10
-  14number:
-    ascii_mode: 0
-    author: amzxyz
-    height: 100
-    horizontal_gap: 0
-    keys:
-      [
-        { click: "{}{Left}", long_click: "^" },
-        { click: "+", long_click: "%" },
-        { click: 1 },
-        { click: 2 },
-        { click: 3 },
-        {
-          click: Back14,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "[]{Left}", long_click: riqi },
-        { click: "-", long_click: "±" },
-        { click: 4 },
-        { click: 5 },
-        { click: 6 },
-        {
-          click: Delete,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "(){Left}", long_click: jine },
-        { click: "*", long_click: "×" },
-        { click: 7 },
-        { click: 8 },
-        { click: 9 },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "=", long_click: jisuan },
-        { click: "/", long_click: "÷" },
-        { click: space2, long_click: paste },
-        { click: 0 },
-        { click: . },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_sym_back_color,
-          hilited_key_text_color: enter_sym_text_color,
-          key_back_color: enter_sym_back_color,
-          key_text_color: enter_sym_text_color,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "数字"
-    round_corner: 0
-    vertical_gap: 0
-    width: 16.6
-  14numberen:
-    ascii_mode: 0
-    author: amzxyz
-    height: 100
-    horizontal_gap: 0
-    keys:
-      [
-        { click: "{}{Left}", long_click: "^" },
-        { click: "+", long_click: "%" },
-        { click: 1 },
-        { click: 2 },
-        { click: 3 },
-        {
-          click: Back14en,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "[]{Left}", long_click: riqi },
-        { click: "-", long_click: "±" },
-        { click: 4 },
-        { click: 5 },
-        { click: 6 },
-        {
-          click: Delete,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "(){Left}", long_click: jine },
-        { click: "*", long_click: "×" },
-        { click: 7 },
-        { click: 8 },
-        { click: 9 },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "=", long_click: jisuan },
-        { click: "/", long_click: "÷" },
-        { click: space2, long_click: paste },
-        { click: 0 },
-        { click: . },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_sym_back_color,
-          hilited_key_text_color: enter_sym_text_color,
-          key_back_color: enter_sym_back_color,
-          key_text_color: enter_sym_text_color,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "数字"
-    round_corner: 0
-    vertical_gap: 0
-    width: 16.6
-  14symbols:
-    ascii_mode: 1
-    author: amzxyz
-    height: 60
-    horizontal_gap: 0
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    keys:
-      [
-        { click: "," },
-        { click: . },
-        { click: "?" },
-        { click: "!" },
-        { click: ":" },
-        { click: ";" },
-        { click: "…" },
-        {
-          click: Back14,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: _ },
-        { click: "-" },
-        { click: "*" },
-        { click: "@" },
-        { click: "'" },
-        { click: '"' },
-        { click: "/" },
-        {
-          click: kb_sym12u,
-          hilited_key_back_color: off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: hilited_off_sym_back_color,
-          width: 16,
-        },
-        { click: "+" },
-        { click: "=" },
-        { click: "<" },
-        { click: ">" },
-        { click: "(" },
-        { click: ")" },
-        { click: "\\" },
-        {
-          click: kb_sym12d,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: "[" },
-        { click: "]" },
-        { click: "{" },
-        { click: "}" },
-        { click: "&" },
-        { click: "#" },
-        { click: "|" },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym11,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_emoji,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_ywz,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym15,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym16,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym17,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym2,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "英文1"
-    round_corner: 0
-    vertical_gap: 0
-    width: 12
-  14symbolsen:
-    ascii_mode: 1
-    author: amzxyz
-    height: 60
-    horizontal_gap: 0
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    keys:
-      [
-        { click: "," },
-        { click: . },
-        { click: "?" },
-        { click: "!" },
-        { click: ":" },
-        { click: ";" },
-        { click: "…" },
-        {
-          click: Back14en,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: _ },
-        { click: "-" },
-        { click: "*" },
-        { click: "@" },
-        { click: "'" },
-        { click: '"' },
-        { click: "/" },
-        {
-          click: kb_sym12u,
-          hilited_key_back_color: off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: hilited_off_sym_back_color,
-          width: 16,
-        },
-        { click: "+" },
-        { click: "=" },
-        { click: "<" },
-        { click: ">" },
-        { click: "(" },
-        { click: ")" },
-        { click: "\\" },
-        {
-          click: kb_sym12d,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: "[" },
-        { click: "]" },
-        { click: "{" },
-        { click: "}" },
-        { click: "&" },
-        { click: "#" },
-        { click: "|" },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym11,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_emoji,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_ywz,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym15,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym16,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym17,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym2,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "英文1"
-    round_corner: 0
-    vertical_gap: 0
-    width: 12
-  18jian:
-    ascii_mode: 0
-    author: amzxyz
-    horizontal_gap: 2
-    key_hint_offset_x: 0
-    key_hint_offset_y: "-2"
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    key_symbol_offset_x: 15
-    keys:
-      [
-        {
-          click: num1,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num2,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num3,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num4,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num5,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num6,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num7,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num8,
-          height: 30,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num9,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: num0,
-          height: 36,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: off_key_back_color,
-          width: 10,
-        },
-        {
-          click: 18keyq,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "\\",
-          key_back_color: main_back_color,
-          long_click: "!",
-          swipe_down: fanxiegang,
-          width: 14.2,
-        },
-        {
-          click: 18keywe,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "{",
-          key_back_color: main_back_color,
-          long_click: "@",
-          swipe_down: "{",
-          width: 14.3,
-        },
-        {
-          click: 18keyrt,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "}",
-          key_back_color: main_back_color,
-          long_click: "#",
-          swipe_down: "}",
-          width: 14.3,
-        },
-        {
-          click: 18keyy,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "[",
-          key_back_color: main_back_color,
-          long_click: "$",
-          swipe_down: "[",
-          width: 14.3,
-        },
-        {
-          click: 18keyu,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "]",
-          key_back_color: main_back_color,
-          long_click: "%",
-          swipe_down: "]",
-          width: 14.3,
-        },
-        {
-          click: 18keyio,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "(",
-          key_back_color: main_back_color,
-          long_click: "^",
-          swipe_down: "(",
-          width: 14.3,
-        },
-        {
-          click: 18keyp,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: ")",
-          key_back_color: main_back_color,
-          long_click: "&",
-          swipe_down: ")",
-          width: 14.2,
-        },
-        { click: "", width: 3 },
-        {
-          click: 18keya,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: select_all,
-          width: 15.6,
-        },
-        {
-          click: 18keysd,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: _,
-          width: 15.6,
-        },
-        {
-          click: 18keyfg,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "-",
-          width: 15.6,
-        },
-        {
-          click: 18keyh,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "*",
-          width: 15.6,
-        },
-        {
-          click: 18keyjk,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: '"',
-          width: 15.6,
-        },
-        {
-          click: 18keyl,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "'",
-          width: 15.6,
-        },
-        { click: "", width: 3 },
-        {
-          click: Shift_L,
-          long_click: Shift_L1,
-          composing: split_word,
-          key_back_color: off_key_back_color,
-          width: 14,
-        },
-        {
-          click: 18keyz,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: fanyinhao,
-          width: 14.3,
-        },
-        {
-          click: 18keyxc,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: copy,
-          width: 14.3,
-        },
-        {
-          click: 18keyv,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: paste,
-          width: 14.3,
-        },
-        {
-          click: 18keybn,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ":",
-          width: 14.3,
-        },
-        {
-          click: 18keym,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ";",
-          width: 14.3,
-        },
-        {
-          click: BS,
-          key_back_color: off_key_back_color,
-          swipe_up: Escape,
-          width: 14,
-        },
-        {
-          click: 18Keyboard_symbols,
-          composing: Tab,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: 18Keyboard_number,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: "，",
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          key_symbol_offset_x: 4,
-          label: "，",
-          long_click: "、",
-          width: 10,
-        },
-        {
-          click: space,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          key_symbol_offset_x: 0,
-          swipe_down: liquid_keyboard_clipboard,
-          swipe_up: Clear,
-          width: 32,
-        },
-        {
-          click: "。",
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          key_symbol_offset_x: 4,
-          label: "。",
-          long_click: "？",
-          width: 10,
-        },
-        {
-          click: Keyboard_letter_18jian,
-          composing: xiegang,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_back_color,
-          hilited_key_symbol_color: enter_symbol_color,
-          hilited_key_text_color: enter_text_color,
-          key_back_color: enter_back_color,
-          key_symbol_color: enter_symbol_color,
-          key_symbol_offset_x: 0,
-          key_text_color: enter_text_color,
-          width: 15,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    label_transform: uppercase
-    lock: true
-    name: "18键"
-    vertical_gap: 4
-  18number:
-    ascii_mode: 0
-    author: amzxyz
-    height: 100
-    horizontal_gap: 0
-    keys:
-      [
-        { click: "{}{Left}", long_click: "^" },
-        { click: "+", long_click: "%" },
-        { click: 1 },
-        { click: 2 },
-        { click: 3 },
-        {
-          click: Back18,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "[]{Left}", long_click: riqi },
-        { click: "-", long_click: "±" },
-        { click: 4 },
-        { click: 5 },
-        { click: 6 },
-        {
-          click: Delete,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "(){Left}", long_click: jine },
-        { click: "*", long_click: "×" },
-        { click: 7 },
-        { click: 8 },
-        { click: 9 },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "=", long_click: jisuan },
-        { click: "/", long_click: "÷" },
-        { click: space2, long_click: paste },
-        { click: 0 },
-        { click: . },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_sym_back_color,
-          hilited_key_text_color: enter_sym_text_color,
-          key_back_color: enter_sym_back_color,
-          key_text_color: enter_sym_text_color,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "数字"
-    round_corner: 0
-    vertical_gap: 0
-    width: 16.6
-  18numberen:
-    ascii_mode: 0
-    author: amzxyz
-    height: 100
-    horizontal_gap: 0
-    keys:
-      [
-        { click: "{}{Left}", long_click: "^" },
-        { click: "+", long_click: "%" },
-        { click: 1 },
-        { click: 2 },
-        { click: 3 },
-        {
-          click: Back18en,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "[]{Left}", long_click: riqi },
-        { click: "-", long_click: "±" },
-        { click: 4 },
-        { click: 5 },
-        { click: 6 },
-        {
-          click: Delete,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "(){Left}", long_click: jine },
-        { click: "*", long_click: "×" },
-        { click: 7 },
-        { click: 8 },
-        { click: 9 },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        { click: "=", long_click: jisuan },
-        { click: "/", long_click: "÷" },
-        { click: space2, long_click: paste },
-        { click: 0 },
-        { click: . },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_sym_back_color,
-          hilited_key_text_color: enter_sym_text_color,
-          key_back_color: enter_sym_back_color,
-          key_text_color: enter_sym_text_color,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "数字"
-    round_corner: 0
-    vertical_gap: 0
-    width: 16.6
-  18symbols:
-    ascii_mode: 1
-    author: amzxyz
-    height: 60
-    horizontal_gap: 0
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    keys:
-      [
-        { click: "," },
-        { click: . },
-        { click: "?" },
-        { click: "!" },
-        { click: ":" },
-        { click: ";" },
-        { click: "…" },
-        {
-          click: Back18,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: _ },
-        { click: "-" },
-        { click: "*" },
-        { click: "@" },
-        { click: "'" },
-        { click: '"' },
-        { click: "/" },
-        {
-          click: kb_sym12u,
-          hilited_key_back_color: off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: hilited_off_sym_back_color,
-          width: 16,
-        },
-        { click: "+" },
-        { click: "=" },
-        { click: "<" },
-        { click: ">" },
-        { click: "(" },
-        { click: ")" },
-        { click: "\\" },
-        {
-          click: kb_sym12d,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: "[" },
-        { click: "]" },
-        { click: "{" },
-        { click: "}" },
-        { click: "&" },
-        { click: "#" },
-        { click: "|" },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym11,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_emoji,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_ywz,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym15,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym16,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym17,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym2,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "英文1"
-    round_corner: 0
-    vertical_gap: 0
-    width: 12
-  18symbolsen:
-    ascii_mode: 1
-    author: amzxyz
-    height: 60
-    horizontal_gap: 0
-    key_press_offset_x: 3
-    key_press_offset_y: 3
-    keys:
-      [
-        { click: "," },
-        { click: . },
-        { click: "?" },
-        { click: "!" },
-        { click: ":" },
-        { click: ";" },
-        { click: "…" },
-        {
-          click: Back18en,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: _ },
-        { click: "-" },
-        { click: "*" },
-        { click: "@" },
-        { click: "'" },
-        { click: '"' },
-        { click: "/" },
-        {
-          click: kb_sym12u,
-          hilited_key_back_color: off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: hilited_off_sym_back_color,
-          width: 16,
-        },
-        { click: "+" },
-        { click: "=" },
-        { click: "<" },
-        { click: ">" },
-        { click: "(" },
-        { click: ")" },
-        { click: "\\" },
-        {
-          click: kb_sym12d,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        { click: "[" },
-        { click: "]" },
-        { click: "{" },
-        { click: "}" },
-        { click: "&" },
-        { click: "#" },
-        { click: "|" },
-        {
-          click: BackSpace,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          key_back_color: off_sym_back_color,
-          width: 16,
-        },
-        {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym11,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_emoji,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_ywz,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym15,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym16,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym17,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_sym2,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    name: "英文1"
-    round_corner: 0
-    vertical_gap: 0
-    width: 12
   default:
     ascii_mode: 0
     author: amzxyz
@@ -1843,7 +380,7 @@ preset_keyboards:
           click: o,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: '"',
+          long_click: "(",
           hint: "9",
           swipe_down: "9",
           width: 10,
@@ -1852,7 +389,7 @@ preset_keyboards:
           click: p,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: danyinhao,
+          long_click: ")",
           hint: "0",
           swipe_down: "0",
           width: 10,
@@ -1869,21 +406,21 @@ preset_keyboards:
           click: s,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "+",
+          long_click: pozhe,
           width: 10,
         },
         {
           click: d,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: pozhe,
+          long_click: "-",
           width: 10,
         },
         {
           click: f,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "-",
+          long_click: "+",
           width: 10,
         },
         {
@@ -1899,28 +436,28 @@ preset_keyboards:
           click: h,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "[",
+          long_click: "\\",
           width: 10,
         },
         {
           click: j,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "]",
+          long_click: ":",
           width: 10,
         },
         {
           click: k,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: ":",
+          long_click: '"',
           width: 10,
         },
         {
           click: l,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "?",
+          long_click: "'",
           width: 10,
         },
         {
@@ -1961,14 +498,14 @@ preset_keyboards:
           click: b,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "/",
+          long_click: "<",
           width: 10,
         },
         {
           click: n,
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
-          long_click: "\\",
+          long_click: ">",
           width: 10,
         },
         {
@@ -2025,6 +562,7 @@ preset_keyboards:
           hilited_key_back_color: hilited_main_back_color,
           key_back_color: main_back_color,
           label: ";",
+          long_click: "?",
           width: 10,
         },
         {
@@ -2067,6 +605,13 @@ preset_keyboards:
     keys:
       [
         {
+          click: leftyi,
+          hilited_key_back_color: hilited_off_sym_back_color,
+          hilited_key_text_color: hilited_off_sym_text_color,
+          key_back_color: off_sym_back_color,
+          key_text_color: off_sym_text_color,
+        },
+        {
           click: select_all,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
@@ -2088,14 +633,14 @@ preset_keyboards:
           key_text_color: off_sym_text_color,
         },
         {
-          click: leftyi,
+          click: Back,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
           key_back_color: off_sym_back_color,
           key_text_color: off_sym_text_color,
         },
         {
-          click: Back,
+          click: rightyi,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
           key_back_color: off_sym_back_color,
@@ -2122,14 +667,14 @@ preset_keyboards:
           key_text_color: off_sym_text_color,
         },
         {
-          click: rightyi,
+          click: Delete,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
           key_back_color: off_sym_back_color,
           key_text_color: off_sym_text_color,
         },
         {
-          click: Delete,
+          click: top1,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
           key_back_color: off_sym_back_color,
@@ -2151,13 +696,6 @@ preset_keyboards:
         },
         {
           click: paste,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: top1,
           hilited_key_back_color: hilited_off_sym_back_color,
           hilited_key_text_color: hilited_off_sym_text_color,
           key_back_color: off_sym_back_color,
@@ -3083,1053 +1621,6 @@ preset_keyboards:
     round_corner: 0
     vertical_gap: 0
     width: 12
-  func:
-    ascii_mode: 0
-    height: 25
-    keys:
-      [
-        {
-          click: Keyboard_func1,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: Settings,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "设置",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Menu,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "方案",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Back_icon,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "返回",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Keyboard_func1,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: Keyboard_func1,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: Deploy,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "部署",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Theme_settings,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "主题",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Color_switch,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "颜色",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Keyboard_func1,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: Keyboard_func1,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: kb_26jian,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "26键",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: kb_18jian,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "18键",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: kb_14jian,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          hint: "14键",
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-        },
-        {
-          click: Keyboard_func1,
-          height: 20,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 12.5,
-        },
-        {
-          click: Keyboard_func1,
-          height: 20,
-          hilited_key_back_color: hilited_off_sym_back_color,
-          hilited_key_text_color: hilited_off_sym_text_color,
-          key_back_color: off_sym_back_color,
-          key_text_color: off_sym_text_color,
-          width: 100,
-        },
-      ]
-    name: "功能"
-    width: 25
-  letter:
-    ascii_mode: 1
-    author: amzxyz
-    horizontal_gap: 2
-    key_hint_offset_x: 0
-    key_hint_offset_y: "-1"
-    key_press_offset_x: 2
-    key_press_offset_y: 2
-    key_symbol_offset_x: 9
-    keys:
-      [
-        {
-          click: q,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "!",
-          hint: "1",
-          swipe_up: "1",
-          width: 10,
-        },
-        {
-          click: w,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "@",
-          hint: "2",
-          swipe_up: "2",
-          width: 10,
-        },
-        {
-          click: e,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "#",
-          hint: "3",
-          swipe_up: "3",
-          width: 10,
-        },
-        {
-          click: r,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "$",
-          hint: "4",
-          swipe_up: "4",
-          width: 10,
-        },
-        {
-          click: t,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "%",
-          hint: "5",
-          swipe_up: "5",
-          width: 10,
-        },
-        {
-          click: y,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "^",
-          hint: "6",
-          swipe_up: "6",
-          width: 10,
-        },
-        {
-          click: u,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "&",
-          hint: "7",
-          swipe_up: "7",
-          width: 10,
-        },
-        {
-          click: i,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "*",
-          hint: "8",
-          swipe_up: "8",
-          width: 10,
-        },
-        {
-          click: o,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: '"',
-          hint: "9",
-          swipe_up: "9",
-          width: 10,
-        },
-        {
-          click: p,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: danyinhao,
-          hint: "0",
-          swipe_up: "0",
-          width: 10,
-        },
-        { width: 5 },
-        {
-          click: a,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: select_all,
-          width: 10,
-        },
-        {
-          click: s,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: shenglue,
-          width: 10,
-        },
-        {
-          click: d,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: pozhe,
-          width: 10,
-        },
-        {
-          click: f,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "-",
-          width: 10,
-        },
-        {
-          click: g,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "<ɪ>",
-          key_back_color: main_back_color,
-          long_click: "=",
-          swipe_down: kb_edit,
-          width: 10,
-        },
-        {
-          click: h,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "[",
-          width: 10,
-        },
-        {
-          click: j,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "]",
-          width: 10,
-        },
-        {
-          click: k,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ":",
-          width: 10,
-        },
-        {
-          click: l,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ";",
-          width: 10,
-        },
-        {
-          click: Shift_L,
-          long_click: Shift_L1,
-          key_back_color: off_key_back_color,
-          width: 15,
-        },
-        {
-          click: z,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: rev,
-          width: 10,
-        },
-        {
-          click: x,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: cut,
-          width: 10,
-        },
-        {
-          click: c,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: Keyboard_default,
-          width: 10,
-        },
-        {
-          click: v,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: paste,
-          width: 10,
-        },
-        {
-          click: b,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "/",
-          width: 10,
-        },
-        {
-          click: n,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "\\",
-          width: 10,
-        },
-        {
-          click: m,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "`",
-          width: 10,
-        },
-        {
-          click: BS,
-          key_back_color: off_key_back_color,
-          swipe_up: Escape,
-          width: 15,
-        },
-        {
-          click: Keyboard_symbols,
-          composing: Tab,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: Keyboard_number,
-          height: 50,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: douhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " ，",
-          long_click: "、",
-          width: 10,
-        },
-        {
-          click: space,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          key_symbol_offset_x: 0,
-          long_click: VOICE_ASSIST,
-          swipe_down: liquid_keyboard_clipboard,
-          swipe_up: Clear,
-          width: 32,
-        },
-        {
-          click: juhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " 。",
-          long_click: "?",
-          width: 10,
-        },
-        {
-          click: xiegang,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_back_color,
-          hilited_key_symbol_color: enter_symbol_color,
-          hilited_key_text_color: enter_text_color,
-          key_back_color: enter_back_color,
-          key_symbol_color: enter_symbol_color,
-          key_symbol_offset_x: 0,
-          key_text_color: enter_text_color,
-          swipe_up: CommitScriptText,
-          width: 15,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    label_transform: uppercase
-    lock: false
-    name: "26键"
-    vertical_gap: 3
-  letter_14jian:
-    ascii_mode: 1
-    author: amzxyz
-    horizontal_gap: 2
-    key_hint_offset_x: 0
-    key_hint_offset_y: "-1"
-    key_press_offset_x: 2
-    key_press_offset_y: 2
-    key_symbol_offset_x: 9
-    keys:
-      [
-        {
-          click: q,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "!",
-          hint: "1",
-          swipe_up: "1",
-          width: 10,
-        },
-        {
-          click: w,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "@",
-          hint: "2",
-          swipe_up: "2",
-          width: 10,
-        },
-        {
-          click: e,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "#",
-          hint: "3",
-          swipe_up: "3",
-          width: 10,
-        },
-        {
-          click: r,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "$",
-          hint: "4",
-          swipe_up: "4",
-          width: 10,
-        },
-        {
-          click: t,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "%",
-          hint: "5",
-          swipe_up: "5",
-          width: 10,
-        },
-        {
-          click: y,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "^",
-          hint: "6",
-          swipe_up: "6",
-          width: 10,
-        },
-        {
-          click: u,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "&",
-          hint: "7",
-          swipe_up: "7",
-          width: 10,
-        },
-        {
-          click: i,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "*",
-          hint: "8",
-          swipe_up: "8",
-          width: 10,
-        },
-        {
-          click: o,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: '"',
-          hint: "9",
-          swipe_up: "9",
-          width: 10,
-        },
-        {
-          click: p,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: danyinhao,
-          hint: "0",
-          swipe_up: "0",
-          width: 10,
-        },
-        { width: 5 },
-        {
-          click: a,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: select_all,
-          width: 10,
-        },
-        {
-          click: s,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: shenglue,
-          width: 10,
-        },
-        {
-          click: d,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: pozhe,
-          width: 10,
-        },
-        {
-          click: f,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "-",
-          width: 10,
-        },
-        {
-          click: g,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "<ɪ>",
-          key_back_color: main_back_color,
-          long_click: "=",
-          swipe_down: kb_edit,
-          width: 10,
-        },
-        {
-          click: h,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "[",
-          width: 10,
-        },
-        {
-          click: j,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "]",
-          width: 10,
-        },
-        {
-          click: k,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ":",
-          width: 10,
-        },
-        {
-          click: l,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ";",
-          width: 10,
-        },
-        {
-          click: Shift_L,
-          long_click: Shift_L1,
-          key_back_color: off_key_back_color,
-          width: 15,
-        },
-        {
-          click: z,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: rev,
-          width: 10,
-        },
-        {
-          click: x,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: cut,
-          width: 10,
-        },
-        {
-          click: c,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: Keyboard_default,
-          width: 10,
-        },
-        {
-          click: v,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: paste,
-          width: 10,
-        },
-        {
-          click: b,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "/",
-          width: 10,
-        },
-        {
-          click: n,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "\\",
-          width: 10,
-        },
-        {
-          click: m,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "`",
-          width: 10,
-        },
-        {
-          click: BS,
-          key_back_color: off_key_back_color,
-          swipe_up: Escape,
-          width: 15,
-        },
-        {
-          click: 14Keyboard_symbolsen,
-          composing: Tab,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: 14Keyboard_numberen,
-          height: 50,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: douhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " ，",
-          long_click: "、",
-          width: 10,
-        },
-        {
-          click: space,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          key_symbol_offset_x: 0,
-          long_click: VOICE_ASSIST,
-          swipe_down: liquid_keyboard_clipboard,
-          swipe_up: Clear,
-          width: 32,
-        },
-        {
-          click: juhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " 。",
-          long_click: "?",
-          width: 10,
-        },
-        {
-          click: Keyboard_14jian,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_back_color,
-          hilited_key_symbol_color: enter_symbol_color,
-          hilited_key_text_color: enter_text_color,
-          key_back_color: enter_back_color,
-          key_symbol_color: enter_symbol_color,
-          key_symbol_offset_x: 0,
-          key_text_color: enter_text_color,
-          swipe_up: CommitScriptText,
-          width: 15,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    label_transform: uppercase
-    lock: false
-    name: "26键"
-    vertical_gap: 3
-  letter_18jian:
-    ascii_mode: 1
-    author: amzxyz
-    horizontal_gap: 2
-    key_hint_offset_x: 0
-    key_hint_offset_y: "-1"
-    key_press_offset_x: 2
-    key_press_offset_y: 2
-    key_symbol_offset_x: 9
-    keys:
-      [
-        {
-          click: q,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "!",
-          hint: "1",
-          swipe_up: "1",
-          width: 10,
-        },
-        {
-          click: w,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "@",
-          hint: "2",
-          swipe_up: "2",
-          width: 10,
-        },
-        {
-          click: e,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "#",
-          hint: "3",
-          swipe_up: "3",
-          width: 10,
-        },
-        {
-          click: r,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "$",
-          hint: "4",
-          swipe_up: "4",
-          width: 10,
-        },
-        {
-          click: t,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "%",
-          hint: "5",
-          swipe_up: "5",
-          width: 10,
-        },
-        {
-          click: y,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "^",
-          hint: "6",
-          swipe_up: "6",
-          width: 10,
-        },
-        {
-          click: u,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "&",
-          hint: "7",
-          swipe_up: "7",
-          width: 10,
-        },
-        {
-          click: i,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "*",
-          hint: "8",
-          swipe_up: "8",
-          width: 10,
-        },
-        {
-          click: o,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: '"',
-          hint: "9",
-          swipe_up: "9",
-          width: 10,
-        },
-        {
-          click: p,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: danyinhao,
-          hint: "0",
-          swipe_up: "0",
-          width: 10,
-        },
-        { width: 5 },
-        {
-          click: a,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: select_all,
-          width: 10,
-        },
-        {
-          click: s,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: shenglue,
-          width: 10,
-        },
-        {
-          click: d,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: pozhe,
-          width: 10,
-        },
-        {
-          click: f,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "-",
-          width: 10,
-        },
-        {
-          click: g,
-          hilited_key_back_color: hilited_main_back_color,
-          hint: "<ɪ>",
-          key_back_color: main_back_color,
-          long_click: "=",
-          swipe_down: kb_edit,
-          width: 10,
-        },
-        {
-          click: h,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "[",
-          width: 10,
-        },
-        {
-          click: j,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "]",
-          width: 10,
-        },
-        {
-          click: k,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ":",
-          width: 10,
-        },
-        {
-          click: l,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: ";",
-          width: 10,
-        },
-        {
-          click: Shift_L,
-          long_click: Shift_L1,
-          key_back_color: off_key_back_color,
-          width: 15,
-        },
-        {
-          click: z,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: rev,
-          width: 10,
-        },
-        {
-          click: x,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: cut,
-          width: 10,
-        },
-        {
-          click: c,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: Keyboard_default,
-          width: 10,
-        },
-        {
-          click: v,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: paste,
-          width: 10,
-        },
-        {
-          click: b,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "/",
-          width: 10,
-        },
-        {
-          click: n,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "\\",
-          width: 10,
-        },
-        {
-          click: m,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          long_click: "`",
-          width: 10,
-        },
-        {
-          click: BS,
-          key_back_color: off_key_back_color,
-          swipe_up: Escape,
-          width: 15,
-        },
-        {
-          click: 18Keyboard_symbolsen,
-          composing: Tab,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: 18Keyboard_numberen,
-          height: 50,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: douhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " ，",
-          long_click: "、",
-          width: 10,
-        },
-        {
-          click: space,
-          hilited_key_back_color: hilited_space_back_color,
-          key_back_color: space_back_color,
-          key_symbol_offset_x: 0,
-          long_click: VOICE_ASSIST,
-          swipe_down: liquid_keyboard_clipboard,
-          swipe_up: Clear,
-          width: 32,
-        },
-        {
-          click: juhao,
-          hilited_key_back_color: hilited_main_back_color,
-          key_back_color: main_back_color,
-          label: " 。",
-          long_click: "?",
-          width: 10,
-        },
-        {
-          click: Keyboard_18jian,
-          hilited_key_symbol_color: off_key_symbol_color,
-          key_back_color: off_key_back_color,
-          key_symbol_color: off_key_symbol_color,
-          key_symbol_offset_x: 0,
-          width: 11,
-        },
-        {
-          click: Return,
-          hilited_key_back_color: hilited_enter_back_color,
-          hilited_key_symbol_color: enter_symbol_color,
-          hilited_key_text_color: enter_text_color,
-          key_back_color: enter_back_color,
-          key_symbol_color: enter_symbol_color,
-          key_symbol_offset_x: 0,
-          key_text_color: enter_text_color,
-          swipe_up: CommitScriptText,
-          width: 15,
-        },
-        { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
-        { click: fancha, width: 16, __include: styl/bottom_key },
-        { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
-        { click: Hide, width: 18, __include: styl/bottom_key },
-      ]
-    label_transform: uppercase
-    lock: false
-    name: "26键"
-    vertical_gap: 3
   number:
     ascii_mode: 0
     author: amzxyz
@@ -4261,21 +1752,21 @@ preset_keyboards:
           width: 16,
         },
         {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
           click: kb_sym11,
           height: 32,
           hilited_key_back_color: hilited_menu_back_color,
           hilited_key_text_color: hilited_menu_text_color,
           key_back_color: hilited_menu_back_color,
           key_text_color: hilited_menu_text_color,
+          width: 12.5,
+        },
+        {
+          click: kb_sym12,
+          height: 32,
+          hilited_key_back_color: hilited_menu_back_color,
+          hilited_key_text_color: hilited_menu_text_color,
+          key_back_color: menu_back_color,
+          key_text_color: menu_text_color,
           width: 12.5,
         },
         {
@@ -4408,21 +1899,21 @@ preset_keyboards:
           width: 16,
         },
         {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: menu_back_color,
-          key_text_color: menu_text_color,
-          width: 12.5,
-        },
-        {
           click: kb_sym11,
           height: 32,
           hilited_key_back_color: hilited_menu_back_color,
           hilited_key_text_color: hilited_menu_text_color,
           key_back_color: hilited_menu_back_color,
           key_text_color: hilited_menu_text_color,
+          width: 12.5,
+        },
+        {
+          click: kb_sym12,
+          height: 32,
+          hilited_key_back_color: hilited_menu_back_color,
+          hilited_key_text_color: hilited_menu_text_color,
+          key_back_color: menu_back_color,
+          key_text_color: menu_text_color,
           width: 12.5,
         },
         {
@@ -4555,21 +2046,21 @@ preset_keyboards:
           width: 16,
         },
         {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
           click: kb_sym11,
           height: 32,
           hilited_key_back_color: hilited_menu_back_color,
           hilited_key_text_color: hilited_menu_text_color,
           key_back_color: menu_back_color,
           key_text_color: menu_text_color,
+          width: 12.5,
+        },
+        {
+          click: kb_sym12,
+          height: 32,
+          hilited_key_back_color: hilited_menu_back_color,
+          hilited_key_text_color: hilited_menu_text_color,
+          key_back_color: hilited_menu_back_color,
+          key_text_color: hilited_menu_text_color,
           width: 12.5,
         },
         {
@@ -9812,21 +7303,21 @@ preset_keyboards:
           width: 16,
         },
         {
-          click: kb_sym12,
-          height: 32,
-          hilited_key_back_color: hilited_menu_back_color,
-          hilited_key_text_color: hilited_menu_text_color,
-          key_back_color: hilited_menu_back_color,
-          key_text_color: hilited_menu_text_color,
-          width: 12.5,
-        },
-        {
           click: kb_sym11,
           height: 32,
           hilited_key_back_color: hilited_menu_back_color,
           hilited_key_text_color: hilited_menu_text_color,
           key_back_color: menu_back_color,
           key_text_color: menu_text_color,
+          width: 12.5,
+        },
+        {
+          click: kb_sym12,
+          height: 32,
+          hilited_key_back_color: hilited_menu_back_color,
+          hilited_key_text_color: hilited_menu_text_color,
+          key_back_color: hilited_menu_back_color,
+          key_text_color: hilited_menu_text_color,
           width: 12.5,
         },
         {
@@ -11236,134 +8727,6 @@ preset_keyboards:
     vertical_gap: 0
     width: 28
 preset_keys:
-  14Keyboard_number:
-    label: 123
-    select: 14number
-    send: Eisu_toggle
-  14Keyboard_numberen:
-    label: 123
-    select: 14numberen
-    send: Eisu_toggle
-  14Keyboard_symbols:
-    label: "符"
-    select: 14symbols
-    send: Eisu_toggle
-  14Keyboard_symbolsen:
-    label: "符"
-    select: 14symbolsen
-    send: Eisu_toggle
-  14keyas:
-    label: "A S"
-    send: a
-  14keybn:
-    label: "B N"
-    send: b
-  14keycv:
-    label: "C V"
-    send: c
-  14keydf:
-    label: "D F"
-    send: d
-  14keyer:
-    label: "E R"
-    send: e
-  14keygh:
-    label: "G H"
-    send: g
-  14keyjk:
-    label: "J K"
-    send: j
-  14keyl:
-    label: " L "
-    send: l
-  14keym:
-    label: " M "
-    send: m
-  14keyop:
-    label: "O P"
-    send: o
-  14keyqw:
-    label: " Q W "
-    send: q
-  14keyty:
-    label: "T Y"
-    send: t
-  14keyui:
-    label: "U I"
-    send: u
-  14keyzx:
-    label: "Z X"
-    send: z
-  18Keyboard_number:
-    label: 123
-    select: 18number
-    send: Eisu_toggle
-  18Keyboard_numberen:
-    label: 123
-    select: 18numberen
-    send: Eisu_toggle
-  18Keyboard_symbols:
-    label: "符"
-    select: 18symbols
-    send: Eisu_toggle
-  18Keyboard_symbolsen:
-    label: "符"
-    select: 18symbolsen
-    send: Eisu_toggle
-  18keya:
-    label: " A "
-    send: a
-  18keybn:
-    label: "B N"
-    send: b
-  18keyfg:
-    label: "F G"
-    send: f
-  18keyh:
-    label: " H "
-    send: h
-  18keyio:
-    label: "I O"
-    send: i
-  18keyjk:
-    label: "J K"
-    send: j
-  18keyl:
-    label: " L "
-    send: l
-  18keym:
-    label: " M "
-    send: m
-  18keyp:
-    label: " P "
-    send: p
-  18keyq:
-    label: " Q "
-    send: q
-  18keyrt:
-    label: "R T"
-    send: r
-  18keysd:
-    label: "S D"
-    send: s
-  18keyu:
-    label: " U "
-    send: u
-  18keyv:
-    label: " V "
-    send: v
-  18keywe:
-    label: "W E"
-    send: w
-  18keyxc:
-    label: "X C"
-    send: x
-  18keyy:
-    label: " Y "
-    send: y
-  18keyz:
-    label: " Z "
-    send: z
   BRIGHTNESS_DOWN:
     label: "亮度-"
     send: BRIGHTNESS_DOWN
@@ -11385,22 +8748,6 @@ preset_keys:
   Back1:
     label: "🔽"
     send: BACK
-  Back14:
-    label: "返回"
-    select: 14jian
-    send: Eisu_toggle
-  Back14en:
-    label: "返回"
-    select: letter_14jian
-    send: Eisu_toggle
-  Back18:
-    label: "返回"
-    select: 18jian
-    send: Eisu_toggle
-  Back18en:
-    label: "返回"
-    select: letter_18jian
-    send: Eisu_toggle
   BackSpace:
     label: "退格"
     repeatable: true
@@ -11539,51 +8886,13 @@ preset_keys:
   Insert:
     label: Ins
     send: Insert
-  Keyboard_14jian:
-    label: "英"
-    select: 14jian
-    send: Eisu_toggle
-  Keyboard_18jian:
-    label: "英"
-    select: 18jian
-    send: Eisu_toggle
   Keyboard_26jian:
     label: "英"
     select: default
     send: Eisu_toggle
-  Keyboard_default:
-    label: " "
-    select: .default
-    send: Eisu_toggle
-  Keyboard_func:
-    functional: false
-    label: "ic@tune-variant"
-    select: func
-    send: Eisu_toggle
-  Keyboard_func1:
-    functional: false
-    label: " "
-    select: func
-    send: Eisu_toggle
   Keyboard_last_lock:
     label: "ic@keyboard-outline"
     select: .last_lock
-    send: Eisu_toggle
-  Keyboard_letter:
-    label: " "
-    select: letter
-    send: Eisu_toggle
-  Keyboard_letter_14jian:
-    label: "中"
-    select: letter_14jian
-    send: Eisu_toggle
-  Keyboard_letter_18jian:
-    label: "中"
-    select: letter_18jian
-    send: Eisu_toggle
-  Keyboard_letter_26jian:
-    label: "中"
-    select: letter
     send: Eisu_toggle
   Keyboard_number:
     label: 123
@@ -11744,9 +9053,6 @@ preset_keys:
   cut_all:
     label: "全挪"
     text: "{Control+a}{Control+x}"
-  danyinhao:
-    label: "'"
-    text: "'"
   dengyu:
     label: "="
     text: "="
@@ -11777,14 +9083,6 @@ preset_keys:
   juhao:
     label: .
     text: .
-  kb_14jian:
-    label: "ic@keyboard"
-    select: 14jian
-    send: Eisu_toggle
-  kb_18jian:
-    label: "ic@keyboard"
-    select: 18jian
-    send: Eisu_toggle
   kb_26jian:
     label: "ic@keyboard"
     select: default
@@ -11836,10 +9134,6 @@ preset_keys:
   kb_emojiu5:
     label: "▲"
     select: emoji5
-    send: Eisu_toggle
-  kb_func:
-    label: "❖"
-    select: func
     send: Eisu_toggle
   kb_sym1:
     label: "◀"
@@ -12197,8 +9491,8 @@ preset_keys:
     label: " "
     text: ";{Left}"
   leftyi:
-    label: "左移"
-    send: "Control+j"
+    label: "顶部"
+    send: "Control+Home"
   liquid_keyboard_clipboard:
     command: liquid_keyboard
     label: "剪贴"
@@ -12266,7 +9560,7 @@ preset_keys:
     send: "Control+Shift+Alt+v"
   pozhe:
     label: "—"
-    text: "——"
+    text: "_"
   redo:
     label: "重做"
     send: "Control+y"
@@ -12277,8 +9571,8 @@ preset_keys:
     label: "撤销"
     send: "Control+z"
   rightyi:
-    label: "右移"
-    send: "Control+k"
+    label: "底部"
+    send: "Control+End"
   riqi:
     label: "日期"
     send: N
@@ -12314,8 +9608,8 @@ preset_keys:
     label: "'分词"
     send: apostrophe
   top1:
-    label: "置顶"
-    send: "Control+p"
+    label: "行选"
+    text: "{Home}{Shift+End}"
   undo:
     label: "撤销"
     send: "Control+z"
@@ -12484,13 +9778,7 @@ style:
     - ywz52
     - ywz61
     - ywz62
-    - 14jian
-    - 18jian
-    - letter
-    - letter_18jian
-    - letter_14jian
     - number
-    - func
     - edit
   label_text_size: 19
   latin_locale: en_US
