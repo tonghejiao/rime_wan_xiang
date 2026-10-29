@@ -1640,7 +1640,7 @@ preset_keyboards:
           key_back_color: off_sym_back_color,
           key_text_color: off_sym_text_color,
         },
-        { click: "[]{Left}", long_click: riqi },
+        { click: "[]{Left}" },
         { click: "-", long_click: "±" },
         { click: 4 },
         { click: 5 },
@@ -1652,7 +1652,7 @@ preset_keyboards:
           key_back_color: off_sym_back_color,
           key_text_color: off_sym_text_color,
         },
-        { click: "(){Left}", long_click: jine },
+        { click: "(){Left}"  },
         { click: "*", long_click: "×" },
         { click: 7 },
         { click: 8 },
@@ -1664,7 +1664,7 @@ preset_keyboards:
           key_back_color: off_sym_back_color,
           key_text_color: off_sym_text_color,
         },
-        { click: "=", long_click: jisuan },
+        { click: "="  },
         { click: "/", long_click: "÷" },
         { click: space2, long_click: paste },
         { click: 0 },
@@ -8822,6 +8822,7 @@ preset_keys:
   Down:
     label: "↓"
     send: Down
+    repeatable: true
   ENVELOPE:
     label: "信箱"
     send: ENVELOPE
@@ -8909,6 +8910,7 @@ preset_keys:
   Left:
     label: "←"
     send: Left
+    repeatable: true
   MTApp:
     command: run
     label: MT
@@ -8951,6 +8953,7 @@ preset_keys:
   Right:
     label: "→"
     send: Right
+    repeatable: true
   SEARCH:
     label: "搜寻"
     send: Find
@@ -9014,6 +9017,7 @@ preset_keys:
   Up:
     label: "↑"
     send: Up
+    repeatable: true
   VOICE_ASSIST:
     label: " "
     send: VOICE_ASSIST
@@ -9074,12 +9078,6 @@ preset_keys:
   jianhao:
     label: "-"
     text: "-"
-  jine:
-    label: "金额"
-    send: R
-  jisuan:
-    label: "计算"
-    send: V
   juhao:
     label: .
     text: .
@@ -9573,18 +9571,12 @@ preset_keys:
   rightyi:
     label: "底部"
     send: "Control+End"
-  riqi:
-    label: "日期"
-    send: N
   select_all:
     label: "☑"
     send: "Control+a"
   share_text:
     label: "分享文本"
     send: "Control+Alt+s"
-  shengdiao:
-    label: "声调"
-    send: "Shift_R+Return"
   shenglue:
     label: "…"
     text: "……"
