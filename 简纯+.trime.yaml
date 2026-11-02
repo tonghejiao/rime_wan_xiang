@@ -1622,7 +1622,7 @@ preset_keyboards:
     vertical_gap: 0
     width: 12
   number:
-    ascii_mode: 0
+    ascii_mode: 1
     author: amzxyz
     height: 100
     horizontal_gap: 0
@@ -9494,11 +9494,6 @@ preset_keys:
   liquid_keyboard_clipboard:
     command: liquid_keyboard
     label: "剪贴"
-    option: "剪贴"
-    send: function
-  liquid_keyboard_clipboard1:
-    command: liquid_keyboard
-    label: "📋"
     option: "剪贴"
     send: function
   liquid_keyboard_emoji:
