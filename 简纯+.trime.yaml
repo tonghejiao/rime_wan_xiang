@@ -586,10 +586,10 @@ preset_keyboards:
           width: 15,
         },
         { click: IME_switch, width: 18, __include: styl/bottom_key },
-        { click: Left, width: 16, __include: styl/bottom_key },
+        { click: Left, swipe_up: Home, width: 16, __include: styl/bottom_key },
         { click: fancha, width: 16, __include: styl/bottom_key },
         { click: zaoci, width: 16, __include: styl/bottom_key },
-        { click: Right, width: 16, __include: styl/bottom_key },
+        { click: Right, swipe_up: End, width: 16, __include: styl/bottom_key },
         { click: Hide, width: 18, __include: styl/bottom_key },
       ]
     label_transform: uppercase
