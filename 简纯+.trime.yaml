@@ -586,8 +586,8 @@ preset_keyboards:
         { click: IME_switch, width: 18, __include: styl/bottom_key },
         { click: Tab, width: 16, __include: styl/bottom_key },
         { click: Left, swipe_up: Home, width: 16, __include: styl/bottom_key },
-        { click: Up, width: 16, __include: styl/bottom_key },
-        { click: Down, width: 18, __include: styl/bottom_key },
+        { click: Down, swipe_up: "Control+End", width: 18, __include: styl/bottom_key },
+        { click: Up, swipe_up: "Control+Home", width: 16, __include: styl/bottom_key },
         { click: Right, swipe_up: End, width: 16, __include: styl/bottom_key },
       ]
     label_transform: uppercase
@@ -744,8 +744,8 @@ preset_keyboards:
         { click: IME_switch, width: 18, __include: styl/bottom_key },
         { click: Tab, width: 16, __include: styl/bottom_key },
         { click: Left, swipe_up: Home, width: 16, __include: styl/bottom_key },
-        { click: Up, width: 16, __include: styl/bottom_key },
-        { click: Down, width: 18, __include: styl/bottom_key },
+        { click: Down, swipe_up: "Control+End", width: 18, __include: styl/bottom_key },
+        { click: Up, swipe_up: "Control+Home", width: 16, __include: styl/bottom_key },
         { click: Right, swipe_up: End, width: 16, __include: styl/bottom_key },
       ]
     name: "编辑"
